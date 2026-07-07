@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pankaj Connect - ERP Software (সম্পূর্ণ ফ্রি)</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <i class="fas fa-chart-line"></i> Pankaj Connect ERP
+            </div>
+            <div class="nav-menu">
+                <a href="#" onclick="loadModule('dashboard')">ড্যাশবোর্ড</a>
+                <a href="#" onclick="loadModule('nid')">NID সেবা</a>
+                <a href="#" onclick="loadModule('location')">লোকেশন</a>
+                <a href="#" onclick="loadModule('invoice')">ইনভয়েস</a>
+                <a href="#" onclick="loadModule('reports')">রিপোর্ট</a>
+                <a href="#" onclick="loadModule('settings')">সেটিংস</a>
+            </div>
+        </nav>
+
+        <div class="sidebar">
+            <ul class="menu-list">
+                <li><a href="#" onclick="loadModule('dashboard')"><i class="fas fa-home"></i> হোম</a></li>
+                <li><a href="#" onclick="loadModule('nid')"><i class="fas fa-id-card"></i> NID Management</a></li>
+                <li><a href="#" onclick="loadModule('location')"><i class="fas fa-map-marker-alt"></i> লাইভ লোকেশন</a></li>
+                <li><a href="#" onclick="loadModule('invoice')"><i class="fas fa-file-invoice"></i> ইনভয়েস</a></li>
+                <li><a href="#" onclick="loadModule('inventory')"><i class="fas fa-boxes"></i> ইনভেন্টরি</a></li>
+                <li><a href="#" onclick="loadModule('accounting')"><i class="fas fa-calculator"></i> হিসাব</a></li>
+                <li><a href="#" onclick="loadModule('hr')"><i class="fas fa-users"></i> কর্মী ব্যবস্থাপনা</a></li>
+                <li><a href="#" onclick="loadModule('reports')"><i class="fas fa-chart-bar"></i> রিপোর্ট</a></li>
+            </ul>
+        </div>
+
+        <main class="main-content">
+            <div id="content-area">
+                <!-- Content will be loaded here -->
+            </div>
+        </main>
+    </div>
+
+    <script src="js/api-config.js"></script>
+    <script src="js/modules/dashboard.js"></script>
+    <script src="js/modules/nid-service.js"></script>
+    <script src="js/modules/location-service.js"></script>
+    <script src="js/modules/invoice.js"></script>
+    <script src="js/modules/inventory.js"></script>
+    <script src="js/modules/accounting.js"></script>
+    <script src="js/modules/hr.js"></script>
+    <script src="js/modules/reports.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
